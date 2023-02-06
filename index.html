@@ -12,6 +12,15 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @font-face {
+      font-family: SecondaryFont;
+      src: url(Montserrat-VariableFont_wght.ttf);
+    }
+    @font-face {
+      font-family: PrimaryFont;
+      src: url(PlayfairDisplay-VariableFont_wght.ttf);
+    }
+
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -32,15 +41,56 @@
     }
 
     .container {
-      width: 400px;
-      height: 400px;
+      width: 600px;
+      height: 450px;
       background-color: white;
-      border-radius: 10px;
+      border-radius: 15px 10px 10px 15px;
+      display: flex;
+      flex-wrap: wrap;
     }
 
-    .primary-text {}
+    .image-container {
+      background-image: url(./images/image-product-desktop.jpg);
+      width: 50%;
+      height: 100%;
+      border-radius: 10px 0px 0px 10px;
+    }
 
-    .secondary-text {}
+    .data-container {
+      max-width: 50%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .primary-text {
+      width: 80%;
+      text-align: left;
+      font-family: PrimaryFont;
+      font-size: 34px;
+      font-weight: bolder;
+      line-height: 30px;
+      margin: 0;
+    }
+
+    .secondary-text {
+      margin: 0;
+      font-weight: 500;
+      font-family: SecondaryFont;
+      color: hsl(228, 12%, 48%);
+      font-size: 15px;
+      width: 80%;
+      line-height: 25px;
+    }
+    .price-container{
+      width: 80%;
+    }
+    .price-one{
+      width: 40%;
+    }
+    .price-two{
+      width: 50%;
+    }
   </style>
 </head>
 
