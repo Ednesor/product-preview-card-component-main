@@ -117,7 +117,7 @@
       font-size: 31px;
       font-weight: bold;
     }
-    
+
     .price-two {
       width: 50%;
       text-decoration: line-through;
@@ -128,7 +128,7 @@
       font-weight: 500;
     }
 
-    .button{
+    .button {
       background-color: hsl(158, 36%, 37%);
       color: white;
       border-radius: 10px;
@@ -144,11 +144,65 @@
       cursor: pointer;
       margin-bottom: 33px;
     }
-    .button span{
+
+    .button span {
       margin-left: 10px;
     }
-    .button:hover{
+
+    .button:hover {
       background-color: hsl(158, 38%, 28%);
+    }
+
+    @media (max-width: 700px) {
+      .container{
+        width: 340px;
+        flex-wrap: wrap;
+        height: 600px;
+        border-radius: 10px;
+      }
+      .image-container{
+        width: 100%;
+        height: 40%;
+        border-radius: 10px 10px 0px 0px;
+        background-position: 50% 35%;
+      }
+      .data-container{
+        max-width: 100%;
+        height: 60%;
+        margin: 0;
+        align-items: center;
+      }
+      .primary-text{
+        width: 85%;
+        margin: 0;
+        font-size: 30px;
+      }
+      .perfume{
+        width: 85%;
+        margin: 0;
+        margin-top: 10px;
+        font-size: 13px;
+      }
+      .secondary-text{
+        width: 85%;
+        margin: 0;
+        font-size: 14px;
+      }
+      .price-container{
+        width: 85%;
+        margin: 0;
+      }
+      .button{
+        width: 85%;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+      .price-one{
+        margin: 0;
+      }
+      .price-two{
+        margin: 0;
+      }
     }
   </style>
 </head>
@@ -178,10 +232,10 @@
     </div>
   </div>
 
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    Coded by <a href="#">Edgardo Funes</a>.
+  </div>
 </body>
 
 </html>
